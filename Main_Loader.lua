@@ -784,7 +784,7 @@ end
 
 Main_Table.main.Conditions_Table:set_callback(function()
 
-    Set_Correct_Group_Up(Main_functions_table:GetName(Main_Table.main.Conditions_Table:get()))
+    Set_Correct_Group_Up(Main_functions_table:GetName(Main_Table.main.Conditions_Table:get(), Main_Table))
 
     Is_Group_Ready = true
 
@@ -2856,7 +2856,4 @@ once_callback()
 
 
 end
-
-
-
 return Main
