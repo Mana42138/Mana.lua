@@ -17,7 +17,7 @@ function Main:isKeyPressed(keyName)
     end
 end
 
-function Main:GetName(id)
+function Main:GetName(id, Main_Table)
 
     if id == 1 and Main_Table.Elements.Allow_Global:get() then
 
