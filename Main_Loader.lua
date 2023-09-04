@@ -766,25 +766,9 @@ Main_Table.Elements = {
 
 }
 
-
-
-function Set_Correct_Group_Up(name)
-    if Is_Group_Ready == false then return end
-    for i,v in pairs(menu_items.main) do
-        if i == name then
-            v:visibility(true)
-        else
-            v:visibility(false)
-        end
-    end
-end
-
-
-
-
 Main_Table.main.Conditions_Table:set_callback(function()
 
-    Set_Correct_Group_Up(Main_functions_table:GetName(Main_Table.main.Conditions_Table:get(), Main_Table))
+    Main_functions_table:Set_Correct_Group_Up(Main_functions_table:GetName(Main_Table.main.Conditions_Table:get(), Main_Table), menu_items, Is_Group_Ready)
 
     Is_Group_Ready = true
 
