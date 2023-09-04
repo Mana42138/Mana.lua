@@ -766,6 +766,7 @@ Main_Table.Elements = {
 
 }
 
+
 Main_Table.main.Conditions_Table:set_callback(function()
 
     Main_functions_table:Set_Correct_Group_Up(Main_functions_table:GetName(Main_Table.main.Conditions_Table:get(), Main_Table), menu_items, Is_Group_Ready)
@@ -2229,11 +2230,7 @@ function defensive_aa(cmd)
         end
 
     end
-
-
-
-
-
+    
     if yaw_settings == "Static" then
 
         yaw_override = 0
