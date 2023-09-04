@@ -51,7 +51,16 @@ function Main:GetName(id, Main_Table)
 
 end
 
-
+function Main:Set_Correct_Group_Up(name, menu_items, Is_Group_Ready)
+    if Is_Group_Ready == false then return end
+    for i,v in pairs(menu_items.main) do
+        if i == name then
+            v:visibility(true)
+        else
+            v:visibility(false)
+        end
+    end
+end
 
 
 return Main
